@@ -1,0 +1,13 @@
+@import "reset.css";
+
+/* General styles */
+@import "general-styles.css";
+
+/* Adaptiwity styles */
+@import url("mobile-main.css") (max-width: 730px);
+@import url("tablet-main.css") (min-width: 730px) and (max-width: 1200px);
+@import url("desctop-main.css") (min-width: 1200px); 
+
+
+
+

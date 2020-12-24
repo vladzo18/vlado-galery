@@ -1,0 +1,58 @@
+/* Filters */
+.filters {
+    height: 9rem;
+}
+.filters__wraper { 
+    align-items: center;
+}
+.label__container {
+    flex-basis: 48%;
+}
+div.label__container:nth-child(1) {
+    order: -2;
+}
+div.label__container:nth-child(2) {
+    order: 0;
+}
+div.label__container:nth-child(3) {
+    order: 2;
+}
+div.label__container:nth-child(4) {
+    order: -1;
+}
+div.label__container:nth-child(5) {
+    order: 1;
+}
+div.label__container:nth-child(6) {
+    order: 3;
+}
+/* Galery */
+.carts__wraper {
+    grid-template-columns: 1fr;
+}
+.cart-img img{
+    border-radius: 5px;
+}
+.cart-img {
+    margin: 0;
+}
+.cart-content{
+    flex-basis: 100%;
+}
+.cart-name,
+.cart-calories,
+.cart hr,
+.range__wraper {
+    display: none;
+}
+
+/* Footer */
+.contacts-box {
+    flex-basis: 100%;
+}
+.corporation {
+    margin-left: 0;
+}
+.corporation {
+    margin-right: auto;
+}

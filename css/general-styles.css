@@ -1,0 +1,121 @@
+/* **********General styles********** */
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4E6171;
+}
+/* Header */
+.header__title h1{
+    text-align: center;
+    color: #183147;
+    font-size: 3rem;
+    text-align: center;
+}
+.header__title span{
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: #E3475A;
+    font-family: 'Ravie';
+}
+.header__title {
+    margin-top: 1rem;
+}
+/* Filters */
+.main-content{
+    padding: 0 30px;
+}
+.main-content > input {
+  display: none;  
+}
+label {
+    cursor: pointer;
+    display: block;
+    user-select: none;
+}
+.filters {
+    margin-top: 2rem;
+    display: flex;
+}
+.filters__wraper {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.label__container {
+    border: 1px solid#D8DCE0;
+    border-radius: 2px;
+    background-color:#EDEFF0;
+    text-align: center;
+    padding: 10px;
+}
+.cart {
+    display: none;
+}
+input[type="radio"]:checked#reset-filtr ~ .galery .cart,
+input[type="radio"]:checked#pan ~ .galery .cart.pan,
+input[type="radio"]:checked#cake ~ .galery .cart.cake,
+input[type="radio"]:checked#roll ~ .galery .cart.roll,
+input[type="radio"]:checked#cheesecakes ~ .galery .cart.cheesecakes,
+input[type="radio"]:checked#pastry ~ .galery .cart.pastry {
+   display: flex;
+}
+input[type="radio"]:checked#pan ~ .filters .label__container.for-pan,
+input[type="radio"]:checked#cake ~ .filters .label__container.for-cake,
+input[type="radio"]:checked#roll ~ .filters .label__container.for-roll,
+input[type="radio"]:checked#cheesecakes ~ .filters .label__container.for-cheesecakes,
+input[type="radio"]:checked#pastry ~ .filters .label__container.for-pastry {
+    background-color: rgb(197, 183, 212);
+    color: black;
+    font-weight: 800;
+}
+/* Galery */
+.galery {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.cart {
+    flex-wrap: wrap;
+}
+.cart-img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+.cart-img img {
+    width: 100%;
+    height: 100%;
+}
+.carts__wraper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: .8rem;
+}
+.cart-name span {
+    color: #183147;
+    font-weight: 700;
+}
+.cart-calories{
+    padding: 5px 15px 25px 15px;
+}
+/* Footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    color: #495C6D;
+    padding: 0 30px;
+}
+.corporation {
+    margin-left: auto;
+}
+.contact-email a {
+    color: #4978A1;
+}
+.contact-email::before {
+    content: url("../img/mail-letter.svg");  
+    vertical-align: middle;
+}
